@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<!--About-->
+<html>
+	<head>
+		<title>Corundum | About Us</title>
+		<link rel="shortcut icon" href="res/logo.png">
+	</head>
+	
+	<script language="JavaScript"><!--
+		/*******************************************************
+					M A G I C  B U T T O N S  v3.1
+					http://www.pagetutor.com/buttons/
+			Permission is granted to freely use this script.
+		********************************************************/
+		// preload images:
+		if (document.images) {
+		clickme1 = new Image(75,22); clickme1.src = "res/family-normal.png";
+		clickme2 = new Image(75,22); clickme2.src = "res/family-onmouse.png";
+		clickme3 = new Image(75,22); clickme3.src = "res/media-normal.png";
+		clickme4 = new Image(75,22); clickme4.src = "res/media-onmouse.png";
+		clickme5 = new Image(75,22); clickme5.src = "res/about-normal.png";
+		clickme6 = new Image(75,22); clickme6.src = "res/about-onmouse.png";
+		clickme7 = new Image(75,22); clickme7.src = "res/corundum-logo-small.png";
+		clickme8 = new Image(75,22); clickme8.src = "res/corundum-logo-mouseon.png";
+		}
+		
+		function hiLite(imgName,imgObjName) {
+		if (document.images) {
+		document.images[imgName].src = eval(imgObjName + ".src");
+		}}
+		//-->
+	</script>
+	
+	<style type="text/css" media="screen">
+	html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	}
+	<!-- http://stackoverflow.com/questions/6208214/placing-3-divs-side-by-side -->
+	#linkscontainer{
+	width: 100%;
+	font-size: 12px;
+	overflow: hidden; /* contain floated elements */
+	}
+		
+	#left {
+	float: left; 
+	width: 33%;
+	}
+	#center { 
+	float: left;
+	width: 33%;
+	}
+	#right{
+	float: left;
+	width: 33%;
+	}
+		
+	img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	}
+	
+	html { overflow-y: hidden; }
+	body { overflow-y: auto; }
+	img#bg { position:absolute; z-index:-1; }
+	#content { position:static; }
+	
+	img#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+	
+	p, marquee {
+	text-align:center;
+	font-family:"Georgia", "Lucida Grande", Arial; /* Georgia for Windows, LGrande for Mac, Arial otherwise */
+	color:#ffffff;
+	font-size:125%;
+	}
+	
+	a {
+	text-align:center;
+	font-family:"Georgia", "Lucida Grande", Arial; /* Segoe for Windows, LGrande for Mac, Arial otherwise */
+	color:#ffffff;
+	font-size:100%;
+	}
+	</style>
+	
+	<body>
+		<img src="res/about-wp.png" alt="background" id="bg" />
+		<div id="img.center">
+			<a href="home.htm"
+				onMouseOver="hiLite('img04','clickme8')"
+				onMouseOut="hiLite('img04','clickme7')">
+				<img src="res/corundum-logo-small.png" alt="Ruby 2019" class="center" name="img04" />
+			</a>
+		</div>
+		
+		<div id="linkscontainer" align="center">
+			<div id="left">
+				<a href="family.htm"
+					onMouseOver="hiLite('img01','clickme2')"
+					onMouseOut="hiLite('img01','clickme1')">
+					<img src="res/family-normal.png" width="100" height="30" border="0" alt="" name="img01" />
+				</a>
+			</div>
+			<div id="center">
+				<a href="media.htm"
+					onMouseOver="hiLite('img02','clickme4')"
+					onMouseOut="hiLite('img02','clickme3')">
+					<img src="res/media-normal.png" width="100" height="30" border="0" alt="" name="img02" />
+				</a>
+			</div>
+			<div id="right">
+				<a href="about.htm"
+					onMouseOver="hiLite('img03','clickme6')"
+					onMouseOut="hiLite('img03','clickme5')">
+					<img src="res/about-normal.png" width="100" height="30" border="0" alt="" name="img03" />
+				</a>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		
+		<p>
+			We are 7-Ruby of <a href="http://mc.pshs.edu.ph/" target="_blank">PSHSMC</a>
+			Batch 2019; only a few of the people<br>
+			responsible for igniting the spark that will start<br>
+			the dream.<br><br>
+			Webpage credits:<br>
+			<marquee behavior="scroll" direction="up" scrollamount="4" height="300" width="500">
+				<b>Information Collection</b><br>
+				Emmanuel Cruz<br>
+				Mildred Paragas<br>
+				Keith Sim<br>
+				<br>
+				<b>Design Consultant</b><br>
+				Alyssa Guevara<br>
+				<br>
+				<b>Website Author</b><br>
+				Aurel Jared Dantis
+			</marquee>
+			<br>
+			<br>
+			&copy; 2014 Ruby 2019. All rights reserved.<br>
+			All code used in this webpage can be found at<br>
+			<a href="https://github.com/aureljared/corundum_site_2014" target="_blank">Aurel Jared's GitHub.</a><br>
+			<br>
+			You are free to look at the code and modify it to your liking,<br>
+			on the condition that you include and retain this About page<br>
+			containing this copyright in your resulting work.
+		</p>
+		<br>
+		<br>
+		
+		<div style="display: block;text-align:center;margin:0 auto;">
+			<a href="http://www.google.com/chrome" target="_blank">
+				<img src="res/best-view.jpg" width="500px" height="130px" style="opacity:0.6;" />
+			</a>
+		</div>
+		<br>
+	</body>
+</html>
