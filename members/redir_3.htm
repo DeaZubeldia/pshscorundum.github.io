@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<title>Corundum | Redirection</title>
-		<link rel="shortcut icon" href="res/logo.png">
+		<link rel="shortcut icon" href="../res/logo.png">
 	</head>
 	
 	<script language="JavaScript"><!--
@@ -15,14 +15,14 @@
 		********************************************************/
 		// preload images:
 		if (document.images) {
-		clickme1 = new Image(75,22); clickme1.src = "res/family-normal.png";
-		clickme2 = new Image(75,22); clickme2.src = "res/family-onmouse.png";
-		clickme3 = new Image(75,22); clickme3.src = "res/media-normal.png";
-		clickme4 = new Image(75,22); clickme4.src = "res/media-onmouse.png";
-		clickme5 = new Image(75,22); clickme5.src = "res/about-normal.png";
-		clickme6 = new Image(75,22); clickme6.src = "res/about-onmouse.png";
-		clickme7 = new Image(75,22); clickme7.src = "res/corundum-logo-small.png";
-		clickme8 = new Image(75,22); clickme8.src = "res/corundum-logo-mouseon.png";
+		clickme1 = new Image(75,22); clickme1.src = "../res/family-normal.png";
+		clickme2 = new Image(75,22); clickme2.src = "../res/family-onmouse.png";
+		clickme3 = new Image(75,22); clickme3.src = "../res/media-normal.png";
+		clickme4 = new Image(75,22); clickme4.src = "../res/media-onmouse.png";
+		clickme5 = new Image(75,22); clickme5.src = "../res/about-normal.png";
+		clickme6 = new Image(75,22); clickme6.src = "../res/about-onmouse.png";
+		clickme7 = new Image(75,22); clickme7.src = "../res/corundum-logo-small.png";
+		clickme8 = new Image(75,22); clickme8.src = "../res/corundum-logo-mouseon.png";
 		}
 		
 		function hiLite(imgName,imgObjName) {
@@ -87,33 +87,33 @@
 	<body>
 		<img src="../res/generic_profile.png" alt="background" id="bg" />
 		<div id="img.center">
-			<a href="home.htm"
+			<a href="../home.htm"
 				onMouseOver="hiLite('img04','clickme8')"
 				onMouseOut="hiLite('img04','clickme7')">
-				<img src="res/corundum-logo-small.png" alt="Ruby 2019" class="center" name="img04" />
+				<img src="../res/corundum-logo-small.png" alt="Ruby 2019" class="center" name="img04" />
 			</a>
 		</div>
 		
 		<div id="linkscontainer" align="center">
 			<div id="left">
-				<a href="family.htm"
+				<a href="../family.htm"
 					onMouseOver="hiLite('img01','clickme2')"
 					onMouseOut="hiLite('img01','clickme1')">
-					<img src="res/family-normal.png" width="100" height="30" border="0" alt="" name="img01" />
+					<img src="../res/family-normal.png" width="100" height="30" border="0" alt="" name="img01" />
 				</a>
 			</div>
 			<div id="center">
-				<a href="media.htm"
+				<a href="../media.htm"
 					onMouseOver="hiLite('img02','clickme4')"
 					onMouseOut="hiLite('img02','clickme3')">
-					<img src="res/media-normal.png" width="100" height="30" border="0" alt="" name="img02" />
+					<img src="../res/media-normal.png" width="100" height="30" border="0" alt="" name="img02" />
 				</a>
 			</div>
 			<div id="right">
-				<a href="about.htm"
+				<a href="../about.htm"
 					onMouseOver="hiLite('img03','clickme6')"
 					onMouseOut="hiLite('img03','clickme5')">
-					<img src="res/about-normal.png" width="100" height="30" border="0" alt="" name="img03" />
+					<img src="../res/about-normal.png" width="100" height="30" border="0" alt="" name="img03" />
 				</a>
 			</div>
 		</div>
@@ -123,13 +123,13 @@
 		<br>
 		<br>
 		
-		<p>
-			Did you mean:
+		<p style="text-align:center;">
+			Did you mean:<br>
 			<a href="ysa.htm">Ysa Yap</a><br>
 			<a href="danie.htm">Danie Ibay</a><br>
 			<br>
 			<br>
-			<a href="../family.htm">Back to previous page</a>
+			<a href="../../family.htm">Back to previous page</a>
 		</p>
 	</body>
 </html>
