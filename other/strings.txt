@@ -1,0 +1,7 @@
+strings:
+
+\t\theight: 100%;\r\n\t} ->
+\t\theight: 100%;\r\n\t}\r\n\tli, ul, p, h2 {\r\n\tcolor:#ffffff;\r\n\tfont-family:"Georgia", "Lucida Grande", Arial;\r\n\tfont-size:110%;\r\n\t}\r\n\th2 {\r\n\tfont-size:150%;\r\n\ttext-align:center;\r\n\t}
+
+\t\t\t\tDescription
+\t\t\t\t<ul>\r\n\t\t\t\t\t<li>Basic Information:</li>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li>Birthday: </li>\r\n\t\t\t\t\t\t<li>Interests: </li>\r\n\t\t\t\t\t\t<li>Hobbies: </li>\r\n\t\t\t\t\t\t<li>Favorite...\r\n\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t<li>...food: </li>\r\n\t\t\t\t\t\t\t<li>...color: </li>\r\n\t\t\t\t\t\t\t<li>...recreational media: </li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tDescription\r\n\t\t\t\t\t</p>
