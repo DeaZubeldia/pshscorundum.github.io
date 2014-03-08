@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<!--Family tree-->
+<html>
+	<head>
+		<title>Corundum | Family Tree</title>
+		<link rel="shortcut icon" href="res/logo.png">
+	</head>
+	
+	<script language="JavaScript"><!--
+		/*******************************************************
+					M A G I C  B U T T O N S  v3.1
+					http://www.pagetutor.com/buttons/
+			Permission is granted to freely use this script.
+		********************************************************/
+		// preload images:
+		if (document.images) {
+		clickme1 = new Image(75,22); clickme1.src = "res/family-normal.png";
+		clickme2 = new Image(75,22); clickme2.src = "res/family-onmouse.png";
+		clickme3 = new Image(75,22); clickme3.src = "res/media-normal.png";
+		clickme4 = new Image(75,22); clickme4.src = "res/media-onmouse.png";
+		clickme5 = new Image(75,22); clickme5.src = "res/about-normal.png";
+		clickme6 = new Image(75,22); clickme6.src = "res/about-onmouse.png";
+		clickme7 = new Image(75,22); clickme7.src = "res/corundum-logo-small.png";
+		clickme8 = new Image(75,22); clickme8.src = "res/corundum-logo-mouseon.png";
+		}
+		
+		function hiLite(imgName,imgObjName) {
+		if (document.images) {
+		document.images[imgName].src = eval(imgObjName + ".src");
+		}}
+		//-->
+	</script>
+	
+	<!-- This style is from http://thecodeplayer.com/walkthrough/css3-family-tree -->
+	<style type="text/css" media="screen">
+	html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	}
+	
+	a {
+	font-family:"Segoe UI";
+	}
+	
+	iframe {
+	margin:0 auto;
+	}
+	
+	p {
+	align:center;
+	font-family:"Segoe UI";
+	}
+	
+	<!-- http://stackoverflow.com/questions/6208214/placing-3-divs-side-by-side -->
+	#linkscontainer{
+	width: 100%;
+	font-size: 12px;
+	overflow: hidden; /* contain floated elements */
+	}
+		
+	#left {
+	float: left; 
+	width: 33%;
+	}
+	#center { 
+	float: left;
+	width: 33%;
+	}
+	#right{
+	float: left;
+	width: 33%;
+	}
+		
+	img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	}
+	
+	html { overflow-y: hidden; }
+	body { overflow-y: auto; }
+	img#bg { position:absolute; z-index:-1; }
+	#content { position:static; }
+	
+	img#bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#semitrans {
+	background-color:#ffffff;
+	opacity:0.7;
+	}
+	</style>
+	
+	<body>
+		<img src="res/wall_4.jpg" alt="background" id="bg" />
+		<div id="img.center">
+			<a href="home.htm"
+				onMouseOver="hiLite('img04','clickme8')"
+				onMouseOut="hiLite('img04','clickme7')">
+				<img src="res/corundum-logo-small.png" alt="Ruby 2019" class="center" name="img04" />
+			</a>
+		</div>
+		
+		<div id="linkscontainer" align="center">
+			<div id="left">
+				<a href="family.htm"
+					onMouseOver="hiLite('img01','clickme2')"
+					onMouseOut="hiLite('img01','clickme1')">
+					<img src="res/family-normal.png" width="100" height="30" border="0" alt="" name="img01" />
+				</a>
+			</div>
+			<div id="center">
+				<a href="media.htm"
+					onMouseOver="hiLite('img02','clickme4')"
+					onMouseOut="hiLite('img02','clickme3')">
+					<img src="res/media-normal.png" width="100" height="30" border="0" alt="" name="img02" />
+				</a>
+			</div>
+			<div id="right">
+				<a href="about.htm"
+					onMouseOver="hiLite('img03','clickme6')"
+					onMouseOut="hiLite('img03','clickme5')">
+					<img src="res/about-normal.png" width="100" height="30" border="0" alt="" name="img03" />
+				</a>
+			</div>
+		</div>
+		
+		<center>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+			<iframe src="subpages/fam-portal.htm" name="lol" frameBorder="0" seamless="seamless" style="width:100%;" height="350px">
+				If you are seeing this text, it means that<br>
+				your browser does not support iframes.
+				<br>
+				<br>
+				Sorry about that.
+				<div style="display: block;text-align:center;margin:0 auto;">
+					<a href="http://www.google.com/chrome" target="_blank">
+						<img src="res/best-view.jpg" width="500px" height="130px" style="opacity:0.6;" />
+					</a>
+				</div>
+			</iframe>
+			
+			<br>
+			<div id="semitrans">
+				<a href="subpages/alyssa-fam.htm" target="lol">Alyssa's Family</a><br>
+				<a href="subpages/dar-fam.htm" target="lol">Darren's Family</a><br>
+				<a href="subpages/employees.htm" target="lol">The Employees</a><br>
+				<a href="subpages/ships.htm" target="lol">Ships</a>
+			</div>
+		</center>
+	</body>
+</html>
