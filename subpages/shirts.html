@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD html 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<!--Media page-->
+<html>
+	<head>
+		<title>Corundum | Media</title>
+		<link rel="shortcut icon" href="../res/logo.png">
+		<script src="../res/jquery.tools.min.js"></script>
+		<style type="text/css"></style>
+		<link rel="stylesheet" type="text/css" href="../res/standalone.css">
+		<link rel="stylesheet" type="text/css" href="../res/scrollable-horizontal.css">
+		<link rel="stylesheet" type="text/css" href="../res/scrollable-buttons.css">
+	</head>
+	
+	<style>
+	/* styling for the image wrapper  */
+	#image_wrap {
+		/* dimensions */
+		width:1205px;
+		padding:15px 0;
+
+		/* centered */
+		text-align:center;
+
+		/* some "skinning" */
+		background-color:#efefef;
+		border:2px solid #fff;
+		outline:1px solid #ddd;
+		-moz-ouline-radius:4px;
+	}
+	</style>
+	
+	<body>
+		<div id="image_wrap" style="opacity: 1; margin:0 auto;">
+			<!-- Initially the image is a simple 1x1 pixel transparent GIF -->
+			<img src="../media/alert.png" width="1200" height="600">
+		</div>
+		<br>
+		
+		<div style="margin:0 auto; width: 634px; height:120px;">
+			<!-- "previous page" action -->
+			<a class="prev browse left">
+				<img src="../res/scroll-left.png" width="30px" height="30px" />
+			</a> 
+			<!-- root element for scrollable -->
+			<div class="scrollable" id="scrollable">
+				<!-- root element for the items -->
+				<div class="items">
+					<!-- 1-5 -->
+					<div>
+						<img src="../media/alert.png" class="active"/>
+						<img src="../media/claw.jpg" />
+						<img src="../media/dream.png" />
+						<img src="../media/hero.jpg" />
+					</div>
+				 
+					<!-- 5-10 -->
+					<div>
+						<img src="../media/line.jpg" />
+						<img src="../media/pride.png" />
+						<img src="../media/rubywork.png" />
+						<img src="../media/sil-black.jpg" />
+					</div>
+				 
+					<!-- 10-15 -->
+					<div>
+						<img src="../media/sil-white.jpg" />
+						<img src="../media/snippet.jpg" />
+						<img src="../media/ultimate.png" />
+						<img src="../media/highvolt.jpg" />
+					</div>
+				</div>
+			</div>
+			<!-- "next page" action -->
+			<a class="next browse right">
+				<img src="../res/scroll-right.png" width="30px" height="30px" />
+			</a>
+			<!-- javascript coding -->
+			<script>
+			$(function() {
+				// initialize scrollable
+				$(".scrollable").scrollable();
+			  
+				$(".items img").click(function() {
+					// see if same thumb is being clicked
+					if ($(this).hasClass("active")) { return; }
+
+					// calclulate large image's URL based on the thumbnail URL (flickr specific)
+					var url = $(this).attr("src");
+
+					// get handle to element that wraps the image and make it semi-transparent
+					var wrap = $("#image_wrap").fadeTo("medium", 0.5);
+
+					// the large image
+					var img = new Image();
+
+					// call this function after it's loaded
+					img.onload = function() {
+
+						// make wrapper fully visible
+						wrap.fadeTo("fast", 1);
+
+						// change the image
+						wrap.find("img").attr("src", url);
+
+					};
+
+					// begin loading the image from www.flickr.com
+					img.src = url;
+
+					// activate item
+					$(".items img").removeClass("active");
+					$(this).addClass("active");
+
+				// when page loads simulate a "click" on the first image
+				}).filter(":first").click();
+			});
+			</script>
+		</div>
+		<br>
+	</body>
+</html>
